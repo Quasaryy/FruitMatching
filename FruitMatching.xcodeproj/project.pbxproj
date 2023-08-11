@@ -13,7 +13,8 @@
 		D2027A402A86180300E5D94A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2027A3E2A86180300E5D94A /* Main.storyboard */; };
 		D2027A422A86180400E5D94A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2027A412A86180400E5D94A /* Assets.xcassets */; };
 		D2027A452A86180400E5D94A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2027A432A86180400E5D94A /* LaunchScreen.storyboard */; };
-		D2027A4E2A86256D00E5D94A /* Fruits.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2027A4D2A86256D00E5D94A /* Fruits.swift */; };
+		D2027A4E2A86256D00E5D94A /* FruitsEng.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2027A4D2A86256D00E5D94A /* FruitsEng.swift */; };
+		D2027A512A862FD400E5D94A /* FruitsRu.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2027A502A862FD400E5D94A /* FruitsRu.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +26,8 @@
 		D2027A412A86180400E5D94A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D2027A442A86180400E5D94A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D2027A462A86180400E5D94A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D2027A4D2A86256D00E5D94A /* Fruits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fruits.swift; sourceTree = "<group>"; };
+		D2027A4D2A86256D00E5D94A /* FruitsEng.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsEng.swift; sourceTree = "<group>"; };
+		D2027A502A862FD400E5D94A /* FruitsRu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsRu.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +83,8 @@
 		D2027A4F2A86257100E5D94A /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				D2027A4D2A86256D00E5D94A /* Fruits.swift */,
+				D2027A4D2A86256D00E5D94A /* FruitsEng.swift */,
+				D2027A502A862FD400E5D94A /* FruitsRu.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -157,7 +160,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2027A4E2A86256D00E5D94A /* Fruits.swift in Sources */,
+				D2027A512A862FD400E5D94A /* FruitsRu.swift in Sources */,
+				D2027A4E2A86256D00E5D94A /* FruitsEng.swift in Sources */,
 				D2027A3D2A86180300E5D94A /* ViewController.swift in Sources */,
 				D2027A392A86180300E5D94A /* AppDelegate.swift in Sources */,
 				D2027A3B2A86180300E5D94A /* SceneDelegate.swift in Sources */,
