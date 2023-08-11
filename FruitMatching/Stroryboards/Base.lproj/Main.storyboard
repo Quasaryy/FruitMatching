@@ -16,38 +16,54 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fuit matching in different languages" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bxp-Rp-cPa">
-                                <rect key="frame" x="76.666666666666686" y="159" width="240" height="67"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="28"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fruit matching in different languages" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bxp-Rp-cPa">
+                                <rect key="frame" x="37.666666666666657" y="299" width="318" height="23"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P0b-1d-Dfg">
-                                <rect key="frame" x="16" y="251" width="361" height="216"/>
+                                <rect key="frame" x="16" y="347" width="361" height="216"/>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rkm-aq-sCQ">
-                                <rect key="frame" x="120.00000000000001" y="487" width="153.33333333333337" height="34.333333333333371"/>
+                                <rect key="frame" x="120.00000000000001" y="583" width="153.33333333333337" height="34.333333333333371"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Check matching">
                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleHeadline"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="checkMatchingTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZJV-iR-2Qv"/>
+                                </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apple" translatesAutoresizingMaskIntoConstraints="NO" id="hhp-BH-J6S">
+                                <rect key="frame" x="46.666666666666657" y="79" width="300" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="eW2-db-f1Y"/>
+                                    <constraint firstAttribute="height" constant="200" id="lKx-Vp-7nQ"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="rkm-aq-sCQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ca1-bn-mSn"/>
                             <constraint firstItem="P0b-1d-Dfg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Cii-xf-JYX"/>
+                            <constraint firstItem="Bxp-Rp-cPa" firstAttribute="top" secondItem="hhp-BH-J6S" secondAttribute="bottom" constant="20" id="Xnn-dB-Tdk"/>
                             <constraint firstItem="P0b-1d-Dfg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="cwk-Rl-lMF"/>
+                            <constraint firstItem="hhp-BH-J6S" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="f5x-li-g8Q"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Bxp-Rp-cPa" secondAttribute="trailing" constant="16" id="fBQ-0f-QEh"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="P0b-1d-Dfg" secondAttribute="trailing" constant="16" id="gVy-cr-cMy"/>
                             <constraint firstItem="Bxp-Rp-cPa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hJy-mz-XIN"/>
                             <constraint firstItem="Bxp-Rp-cPa" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="i9c-R4-IBL"/>
                             <constraint firstItem="rkm-aq-sCQ" firstAttribute="top" secondItem="P0b-1d-Dfg" secondAttribute="bottom" constant="20" id="icf-2c-jvW"/>
-                            <constraint firstItem="Bxp-Rp-cPa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="jWm-rL-iTX"/>
+                            <constraint firstItem="hhp-BH-J6S" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pnt-Iy-dQr"/>
                             <constraint firstItem="P0b-1d-Dfg" firstAttribute="top" secondItem="Bxp-Rp-cPa" secondAttribute="bottom" constant="25" id="tdF-Ml-OsY"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="fruitImageView" destination="hhp-BH-J6S" id="ZCC-Iw-Men"/>
+                        <outlet property="pickerView" destination="P0b-1d-Dfg" id="rwy-v0-cis"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -55,6 +71,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="apple" width="460" height="460"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
