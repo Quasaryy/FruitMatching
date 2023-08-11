@@ -59,12 +59,20 @@
 				D2027A382A86180300E5D94A /* AppDelegate.swift */,
 				D2027A3A2A86180300E5D94A /* SceneDelegate.swift */,
 				D2027A3C2A86180300E5D94A /* ViewController.swift */,
-				D2027A3E2A86180300E5D94A /* Main.storyboard */,
+				D2027A4C2A86180F00E5D94A /* Stroryboards */,
 				D2027A412A86180400E5D94A /* Assets.xcassets */,
-				D2027A432A86180400E5D94A /* LaunchScreen.storyboard */,
 				D2027A462A86180400E5D94A /* Info.plist */,
 			);
 			path = FruitMatching;
+			sourceTree = "<group>";
+		};
+		D2027A4C2A86180F00E5D94A /* Stroryboards */ = {
+			isa = PBXGroup;
+			children = (
+				D2027A3E2A86180300E5D94A /* Main.storyboard */,
+				D2027A432A86180400E5D94A /* LaunchScreen.storyboard */,
+			);
+			path = Stroryboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
