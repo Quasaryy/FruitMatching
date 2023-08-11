@@ -25,7 +25,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         pickerView.delegate = self
         pickerView.dataSource = self
         
-        // Fruit image on starting app
+        // Fruit image on app start
         let row = pickerView.selectedRow(inComponent: 0)
         fruitImageView.image = UIImage(named: fruitsEng[row].image)
         
